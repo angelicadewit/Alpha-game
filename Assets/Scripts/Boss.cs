@@ -12,14 +12,15 @@ public class Boss : MonoBehaviour {
     public GameObject firewall;
     private float timeBtwFireWalls;
     public float startTimeBtwFireWalls;
-    public GameObject player;
+    public GameObject leftPoint;
+    public GameObject rightPoint;
 
 
     // Use this for initialization
     void Start () {
 
         timeBtwFireWalls = startTimeBtwFireWalls;
-        player = GameObject.FindGameObjectWithTag("Player");
+        leftPoint = GameObject.FindGameObjectWithTag("LeftPoint");
   
 
     }
@@ -31,7 +32,7 @@ public class Boss : MonoBehaviour {
 
         if (health <= 10){
 
-            gameObject.transform.position = player.transform.position;
+            gameObject.transform.position = leftPoint.transform.position;
 
         }
 
@@ -40,16 +41,19 @@ public class Boss : MonoBehaviour {
 
         if (health <= 8){
 
-            if (timeBtwFireWalls <= 0)
-            {
+            if (timeBtwFireWalls <= 0){
                 Instantiate(firewall, transform.position, Quaternion.identity);
                 timeBtwFireWalls = startTimeBtwFireWalls;
-            }
-            else
-            {
+            } else {
                 timeBtwFireWalls -= Time.deltaTime;
             }
         }
+
+
+        if (health <= 6) {
+            gameObject.transform.position = rightPoint.transform.position;
+        }
+
 
 
 

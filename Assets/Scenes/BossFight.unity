@@ -405,6 +405,11 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114583154997691152, guid: 6e43b6517b2db60439f803a713959deb,
+        type: 2}
+      propertyPath: startTimeBtwFireWalls
+      value: 9.17
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e43b6517b2db60439f803a713959deb, type: 2}
   m_IsPrefabAsset: 0
@@ -413,6 +418,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1018459824241408, guid: a909b6c37091e1145a0dff7021580291,
     type: 2}
   m_PrefabInternal: {fileID: 896622178}
+--- !u!114 &834454202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 834454201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4ade017ae3ca40db94398bf3e5385e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!58 &834454204
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -448,6 +464,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &834454206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 834454201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4ade017ae3ca40db94398bf3e5385e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &896622178
 Prefab:
   m_ObjectHideFlags: 0
@@ -603,7 +630,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 276053878b99b714e962e8241fe7a8d5, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -719,7 +746,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 10
+  m_MaxValue: 15
   m_WholeNumbers: 0
   m_Value: 1
   m_OnValueChanged:
