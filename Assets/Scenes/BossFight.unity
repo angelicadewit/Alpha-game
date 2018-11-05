@@ -395,6 +395,16 @@ Prefab:
       propertyPath: speed
       value: -0.91
       objectReference: {fileID: 0}
+    - target: {fileID: 212785188243032896, guid: 6e43b6517b2db60439f803a713959deb,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 95981349687427950, guid: 6e43b6517b2db60439f803a713959deb,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e43b6517b2db60439f803a713959deb, type: 2}
   m_IsPrefabAsset: 0
@@ -873,7 +883,7 @@ Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1842672959}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
